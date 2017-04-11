@@ -2,7 +2,7 @@
 junior developers solving bicycle docking problems.
 
 
-####User Stories
+###User Stories
 
 ```
 As a person,
@@ -14,7 +14,8 @@ So that I can use a good bike,
 I'd like to see if a bike is working
 ```
 
-####Functional Representation
+###Functional Representation
+
 Objects  | Messages
 ------------- | -------------
 Person  |
