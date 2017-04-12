@@ -10,10 +10,9 @@ attr_reader :bike
   end
 
   def dock(bike)
+    fail 'too many bikes' if @bike
     @bike = bike
   end
-
-
 end
 
 # attr_reader :what_bike
