@@ -12,6 +12,7 @@ attr_reader :bike
     @bike = bike
   end
 
+
 end
 
 # attr_reader :what_bike
