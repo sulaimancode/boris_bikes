@@ -9,12 +9,12 @@ attr_reader :bikes
   end
 
   def release_bike
-    fail 'no bikes' unless @bikes
+    fail 'no bikes' if @bikes.empty?
     @bikes
   end
 
   def dock(bike)
-    fail 'too many bikes' if @bikes
-    @bikes = bike
+    fail 'too many bikes' if @bikes.count >= 20
+    @bikes << bike
   end
 end
