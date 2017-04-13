@@ -31,6 +31,13 @@ describe DockingStation do
     subject.capacity.times { subject.dock(Bike.new) }
       expect { subject.dock Bike.new }.to raise_error 'too many bikes'
     end
+
+    it 'should not dock when broken' do
+      bike = Bike.new
+      bike.broken
+      expect(subject.dock(bike))
+    end
+
   end
   it "should set capacity to 10 when given 10" do
   station = DockingStation.new(10)
